@@ -1,0 +1,6 @@
+.idea
+init/.terraform
+src/.terraform
+src/plan
+init/plan
+init/terraform.tfstate
