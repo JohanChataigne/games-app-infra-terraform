@@ -16,6 +16,10 @@ resource "azurerm_linux_web_app" "games_backend" {
     type = "SystemAssigned"
   }
 
+  app_settings = {
+    "WEBSITES_PORT" = 8080
+  }
+
   site_config {
     container_registry_use_managed_identity = true
     application_stack {
